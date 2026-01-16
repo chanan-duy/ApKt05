@@ -2,7 +2,8 @@
 
 internal abstract class Program
 {
-	private static void Main(string[] _)
+	private static async Task Main(string[] _)
 	{
+		await Logic.RunLogic();
 	}
 }
