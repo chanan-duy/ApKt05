@@ -28,8 +28,10 @@ public static class Logic
 	{
 		var tempFilePath = Path.GetTempFileName();
 
+		Console.WriteLine($"Writing into: {tempFilePath}");
 		await PrepareFileAsync(tempFilePath);
 
+		Console.WriteLine("Parsing it...");
 		await ParseFileAsync(tempFilePath);
 	}
 
